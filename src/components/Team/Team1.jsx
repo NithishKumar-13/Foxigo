@@ -1,9 +1,9 @@
 import React from 'react'
-import './Team1.scss'
+import './Team.scss'
 
 const Team1 = () => {
     return(
-        <div>
+        <div className='team team--1'>
             Team 1
         </div>
     )

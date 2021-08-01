@@ -5,10 +5,86 @@ import Team1 from '../Team/Team1'
 import Team2 from '../Team/Team2'
 import './Home.scss'
 
+const initialTeam1 = [
+    {
+        id : "iu56g23",
+        foxName : "Mike",
+        img : "https://randomfox.ca/images/9.jpg",
+        power : 144,
+        gender : "male"
+    },
+    {
+        id : "jk34sx1",
+        foxName : "Eva",
+        img : "https://randomfox.ca/images/2.jpg",
+        power : 135,
+        gender : "female"
+    },
+    {
+        id : "34xcvl6",
+        foxName : "Jasper",
+        img : "https://randomfox.ca/images/10.jpg",
+        power : 77,
+        gender : "male"
+    },
+    {
+        id : "89efc23",
+        foxName : "Rex",
+        img : "https://randomfox.ca/images/6.jpg",
+        power : 99,
+        gender : "male"
+    },
+    {
+        id : "ox90264",
+        foxName : "Thor",
+        img : "https://randomfox.ca/images/29.jpg",
+        power : 122,
+        gender : "male"
+    }
+]
+
+const initialTeam2 = [
+    {
+        id : "hj673df",
+        foxName : "Bentley",
+        img : "https://randomfox.ca/images/12.jpg",
+        power : 138,
+        gender : "male"
+    },
+    {
+        id : "mq23ev9",
+        foxName : "Dexter",
+        img : "https://randomfox.ca/images/20.jpg",
+        power : 82,
+        gender : "male"
+    },
+    {
+        id : "uil562t",
+        foxName : "Haze",
+        img : "https://randomfox.ca/images/17.jpg",
+        power : 117,
+        gender : "female"
+    },
+    {
+        id : "rtxg562",
+        foxName : "Luma",
+        img : "https://randomfox.ca/images/13.jpg",
+        power : 130,
+        gender : "female"
+    },
+    {
+        id : "3490adf",
+        foxName : "Zorro",
+        img : "https://randomfox.ca/images/15.jpg",
+        power : 95,
+        gender : "female"
+    }
+]
+
 const Home = () => {
     const [foxData,] = useState(FoxData)
-    const [team1, setTeam1] = useState([])
-    const [team2, setTeam2] = useState([])
+    const [team1, setTeam1] = useState(initialTeam1)
+    const [team2, setTeam2] = useState(initialTeam2)
     const [isPlaying, setIsPlaying] = useState(false)
 
     useEffect(() => {

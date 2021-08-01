@@ -1,5 +1,5 @@
 .main {
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 4rem);
     max-height: 70rem;
     width: 120rem;
     max-width: 140rem;
@@ -15,7 +15,7 @@
     &__container {
         height: 100%;
         display: grid;
-        grid-template-rows: 10% 45% 45%;
+        grid-template-rows: 8% 45% 45%;
 
         & > * + * {
             margin-top: 2rem;

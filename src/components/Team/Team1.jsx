@@ -9,7 +9,7 @@ const Team1 = (props) => {
              {props.team1.map(data => (
                 <div className='card'>
                     <div className="card__picture">
-                        {/* <img src={data.img} alt={data.foxName} className="card__img" /> */}
+                        <img src={data.img} alt={data.foxName} className="card__img" />
                     </div>
                     <div className="card__body">
                         <p>Name : {data.foxName}</p>

@@ -82,25 +82,27 @@ const initialTeam2 = [
 ]
 
 const Home = () => {
-    const [foxData,] = useState(FoxData)
     const [team1, setTeam1] = useState(initialTeam1)
     const [team2, setTeam2] = useState(initialTeam2)
     const [isPlaying, setIsPlaying] = useState(false)
 
-    useEffect(() => {
-        const foo = () => {
-            const t1 = []
-            const t2 = [...foxData]
-            while(t1.length < t2.length) {
-                let randIdx = Math.floor(Math.random() * t1.length)
-                let randFox = t2.splice(randIdx, 1)[0]
-                t1.push(randFox)
-            }
-            setTeam1(t1)
-            setTeam2(t2)
+    console.log('rendered')
+
+    const foo = () => {
+        const t1 = []
+        const t2 = [...FoxData]
+        while(t1.length < t2.length) {
+            let randIdx = Math.floor(Math.random() * t2.length)
+            let randFox = t2.splice(randIdx, 1)[0]
+            t1.push(randFox)
         }
-        foo()    
-    },[isPlaying,foxData])
+        setTeam1(t1)
+        setTeam2(t2)
+    }
+
+    useEffect(() => {
+        foo()
+    },[isPlaying])
 
     return(
         <main className='main'>

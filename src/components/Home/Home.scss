@@ -10,4 +10,42 @@
     -webkit-backdrop-filter: blur( 4.0px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem;
+
+    // &__container {
+
+    // }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo {
+            height: 4rem;
+        }
+
+        &__title {
+            font-size: 2.3rem;
+            margin-left: .5rem;
+        }
+
+        &__btn {
+            all: unset;
+            background-color: #f3886a;
+            color: #fff;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: darken(#f3886a, 5);
+            }
+        }
+    }
 }

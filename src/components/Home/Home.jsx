@@ -3,9 +3,15 @@ import './Home.scss'
 
 const Home = () => {
     return(
-        <div>
-            Home
-        </div>
+        <main className='main'>
+            <div className="main__container">
+                <nav className="main__navbar">
+                    <div className="main__navbar__logo-box">
+                        <p className="main__navbar__title">Foxigo</p>
+                    </div>
+                </nav>
+            </div>
+        </main>
     )
 }
 

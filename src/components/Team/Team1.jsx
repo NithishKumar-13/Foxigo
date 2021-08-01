@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from '../Card/Card'
 import './Team.scss'
 
 const Team1 = (props) => {

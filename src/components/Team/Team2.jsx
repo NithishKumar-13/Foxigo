@@ -6,6 +6,20 @@ const Team1 = ({team2}) => {
     return(
         <div className='team team--2'>
             <p className="team__title">Team 2</p>
+            <div className="team__container">
+             {team2.map(data => (
+                <div className='card'>
+                    <div className="card__picture">
+                        <img src={data.img} alt={data.foxName} className="card__img" />
+                    </div>
+                    <div className="card__body">
+                        <p>Name : {data.foxName}</p>
+                        <p>Gender : {data.gender}</p>
+                        <p>Power : {data.power}</p>
+                    </div>
+                </div>
+            ))}
+             </div>
         </div>
     )
 }

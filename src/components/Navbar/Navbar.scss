@@ -1,0 +1,38 @@
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo {
+            height: 4rem;
+        }
+
+        &__title {
+            font-size: 2.3rem;
+            margin-left: .5rem;
+        }
+
+        &__btn {
+            all: unset;
+            background-color: #f3886a;
+            color: #fff;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+
+            &--disabled {
+                cursor: not-allowed;
+                background-color: lighten(#f3886a,10);
+            }
+
+            &:hover {
+                background-color: darken(#f3886a, 5);
+            }
+        }
+    }

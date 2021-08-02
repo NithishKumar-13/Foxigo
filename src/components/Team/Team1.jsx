@@ -1,12 +1,12 @@
 import React from 'react'
 import './Team.scss'
 
-const Team1 = (props) => {
+const Team1 = ({ team1, isWinner }) => {
     return(
-        <div className='team team--1'>
+        <div className={`team team--1 ${isWinner ? 'win' : 'lost'}`}>
             <p className="team__title">Team 1</p>
              <div className="team__container">
-             {props.team1.map(data => (
+             {team1.map(data => (
                 <div className='card'>
                     <div className="card__picture">
                         <img src={data.img} alt={data.foxName} className="card__img" />

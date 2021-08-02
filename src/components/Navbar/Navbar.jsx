@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.scss'
 
-const Navbar = () => {
+const Navbar = ({ handleClick }) => {
     return(
         <nav className="navbar">
         <div className="navbar__logo-box">
@@ -9,7 +9,7 @@ const Navbar = () => {
             <p className="navbar__title">Foxigo</p>
         </div>
         <div className="navbar__btn-box">
-            <button className="navbar__btn">Play again</button>
+            <button onClick={handleClick} className='navbar__btn'>Play again</button>
         </div>
     </nav>
     )

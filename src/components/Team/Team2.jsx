@@ -1,10 +1,10 @@
 import React from 'react'
 import './Team.scss'
 
-const Team1 = ({team2}) => {
+const Team1 = ({ team2, isWinner }) => {
 
     return(
-        <div className='team team--2'>
+        <div className={`team team--2 ${isWinner ? 'win' : 'lost'}`}>
             <p className="team__title">Team 2</p>
             <div className="team__container">
              {team2.map(data => (

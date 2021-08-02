@@ -2,12 +2,12 @@
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(20ch,1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit,minmax(10ch,1fr));
+        gap: 3rem;
     }
 
     .card {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.623);
         min-height: 20rem;
         display: flex;
         flex-direction: column;
@@ -28,6 +28,17 @@
         &__body {
             padding: 1rem 1rem .1rem;
             text-align: center;
+
+            & p {
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        &__key {
+            color: darken($color: #ff7559, $amount: 30);
+            font-weight: bold;
+            font-family: 'Merienda', cursive;
+            margin-right: .4rem;
         }
     }
 }

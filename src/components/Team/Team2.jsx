@@ -13,9 +13,9 @@ const Team1 = ({ team2, isWinner }) => {
                         <img src={data.img} alt={data.foxName} className="card__img" />
                     </div>
                     <div className="card__body">
-                        <p>Name : {data.foxName}</p>
-                        <p>Gender : {data.gender}</p>
-                        <p>Power : {data.power}</p>
+                        <p><span className="card__key">Name : </span>{data.foxName}</p>
+                        <p><span className="card__key">Gender : </span>{data.gender}</p>
+                        <p><span className="card__key">Power : </span>{data.power}</p>
                     </div>
                 </div>
             ))}

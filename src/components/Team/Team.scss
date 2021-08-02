@@ -4,6 +4,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(10ch,1fr));
         gap: 3rem;
+        padding: 1rem 2rem;
     }
 
     .card {
@@ -44,5 +45,8 @@
 }
 
 .win {
-    border: 4px solid green;
+        background-image: radial-gradient(circle at 100% 100%, transparent -6px, #9646d8 -6px, #9646d8 1px, transparent 1px), linear-gradient(to right, #9646d8, #1de2fc), radial-gradient(circle at 0% 100%, transparent -6px, #1de2fc -6px, #1de2fc 1px, transparent 1px), linear-gradient(to bottom, #1de2fc, #ee588d), radial-gradient(circle at 0% 0%, transparent -6px, #ee588d -6px, #ee588d 1px, transparent 1px), linear-gradient(to left, #ee588d, #ffd600), radial-gradient(circle at 100% 0%, transparent -6px, #ffd600 -6px, #ffd600 1px, transparent 1px), linear-gradient(to top, #ffd600, #9646d8);
+        background-size: 1px 1px, calc(100% - 2px) 7px, 1px 1px, 7px calc(100% - 2px);
+        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+        background-repeat: no-repeat;
 }

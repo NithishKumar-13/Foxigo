@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import FoxData from '../../FoxData.json'
 import Team1 from '../Team/Team1'
@@ -84,8 +84,8 @@ const initialTeam2 = [
 const Home = () => {
     const [team1, setTeam1] = useState(initialTeam1)
     const [team2, setTeam2] = useState(initialTeam2)
-    const [team1Total, setTeam1Total] = useState()
-    const [team2Total, setTeam2Total] = useState()
+    const [team1Total, setTeam1Total] = useState(577)
+    const [team2Total, setTeam2Total] = useState(562)
 
     const foo = () => {
         const t1 = []

@@ -100,6 +100,10 @@ const Home = () => {
         setTeam2(t2)
     }
 
+    const handleClick = () => {
+        foo()
+    }
+
     useEffect(() => {
         foo()
     },[isPlaying])
@@ -107,7 +111,7 @@ const Home = () => {
     return(
         <main className='main'>
             <div className="main__container">
-               <Navbar isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+               <Navbar isPlaying={isPlaying} setIsPlaying={setIsPlaying} handleClick={handleClick} />
                <Team1 team1={team1} />
                <Team2 team2={team2} />
             </div>

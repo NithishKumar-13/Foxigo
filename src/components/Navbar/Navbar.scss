@@ -1,40 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .navbar {
+    &__logo-box {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        cursor: pointer;
+    }
 
-        &__logo-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+    &__logo {
+        height: 4rem;
+    }
+
+    &__title {
+        font-size: 2.3rem;
+        margin-left: .5rem;
+    }
+
+    &__btn {
+        all: unset;
+        background-color: #f3886a;
+        color: #fff;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &--disabled {
+            cursor: not-allowed;
+            background-color: lighten(#f3886a,10);
         }
 
-        &__logo {
-            height: 4rem;
-        }
-
-        &__title {
-            font-size: 2.3rem;
-            margin-left: .5rem;
-        }
-
-        &__btn {
-            all: unset;
-            background-color: #f3886a;
-            color: #fff;
-            padding: .5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-
-            &--disabled {
-                cursor: not-allowed;
-                background-color: lighten(#f3886a,10);
-            }
-
-            &:hover {
-                background-color: darken(#f3886a, 5);
-            }
+        &:hover {
+            background-color: darken(#f3886a, 5);
         }
     }
+}

@@ -1,11 +1,12 @@
 # Foxigo
 
-Foxigo is a mini and simple game built with React. I created this game just for fun. Feel free to fork this repo and add some more features as you wish. 
+Foxigo is a mini and simple game built with React. I created this game just for fun. Feel free to fork this repo and add some more features of your own. 
 
 ## Preview
 
 You can preview the finished project [here](https://foxigo.vercel.app/).
 
+![](src/assets/preview.gif)
 
 ## How to play
 
